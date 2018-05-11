@@ -165,6 +165,7 @@ section#best article ol li{
 #gallery{
 	height: 112.6rem;
 
+
 }
 
 /*third section*/
@@ -180,8 +181,32 @@ section#best article ol li{
 /*fifth section */
 #contact{
 	height: 61.5rem;
+
 }
 	
+h3.section_header{
+	font-size: 4.8rem;
+	font-weight: 300;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -3rem;
+	padding: 0 33.3%;
+	display: inline-block;	
+}
+
+img.header_decoration{
+	display: block;
+	margin: 1.6rem 0;
+	padding: 0 33.3%;
+	display: inline-block;
+}
+
+
+
+
+
+
 /*footer style*/
 footer{
 	height: 54rem;
