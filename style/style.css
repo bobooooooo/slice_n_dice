@@ -1,4 +1,5 @@
-html, body, header, main, footer, div, span, h1, h2, h3, h4, a ,ul, ol, li, img, p, section, article{
+/*clear browser*/
+html, body, header, main, footer, div, span, h1, h2, h3, h4, a ,ul, ol, li, img, p, section, article, button, form, input{
 	margin: 0;
 	padding: 0;
 }
@@ -20,6 +21,7 @@ html{
 	width: 94rem;
 	margin: 0 auto;
 	position: relative;
+	
 	
 }
 
@@ -123,17 +125,26 @@ section h3{
 /*first section*/
 #best{
 	height: 67.5rem;
-	border: 1px solid black;
 }
 
 section#best div.container h3{
 	display: inline-block;
 	text-transform: uppercase;
+	font-weight: 300;
 	height: 16.4rem;
 	width: 26.2rem;
 	position: absolute;
 	top: 13.7rem;
 	left: 0rem;
+	padding: 0;
+}
+
+.bold{
+	font-weight: 400;
+}
+
+.blue{
+	color: #00aaef;
 }
 
 section#best article{
@@ -143,69 +154,153 @@ section#best article{
 	width: 55.2rem;
 	position: absolute;
 	top:13.7rem;
-	left:37.5rem;	
+	left:37.5rem;
+	font-size: 1.6rem;
 }
 
 section#best article h4{
-	font-weight: 500;
+	font-weight: bold;
 
 }
 
 section#best article p{
 	font-size: 400;
+
+}
+
+section#best article > p:nth-child(4), p:nth-child(5) {
+	font-weight: bold;
+}
+
+section#best article ol{
+	margin: 4.8rem 0;
 }
 
 section#best article ol li{
 	font-size: 400;
 }
 
-
-
 /*second section*/
 #gallery{
-	height: 112.6rem;
-
-
+	height: 126rem;
 }
+
+section#gallery div.container div.gallery{
+	display: inline-block;
+	width: 100%; 
+	height: 26.2rem;
+	margin-top:3rem;
+	margin-bottom: 1.8rem; 
+}
+
+section#gallery div.container div.gallery:first-child{
+	margin-top:6.5rem;
+}
+
+span.gallery_odd{
+	font-size: 1.6rem;
+	color: #000;
+	font-weight: 400;
+}
+
+span.gallery_even{
+	font-size: 1.6rem;
+	color: #00aaef;
+	font-weight: 400;
+}
+
+div.gallery img:nth-of-type(2){
+	padding-left: 1.7rem;
+}
+
+section#gallery div.container button{
+	display: block;
+	width: 18.8rem;
+	height: 5.2rem;
+	background-color: #00aaef; 
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #fff;
+	margin: 4rem auto 11rem;
+}
+
+
 
 /*third section*/
 #consultation{
 	height: 58.3rem;
 }
 
-/*forth section*/
-#testimonials{
-	height: 57rem;	
+section#consultation div.container article{
+	display: inline-block;
+	width: 46rem;
+	height: 24.4rem;
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
+section#consultation div.container div#consult_form{
+	display: inline-block;
+	width: 38rem;
+	height: 24.4rem;
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+section#consultation div.container div#consult_form form input{
+	display: block;
+	width: 100%;
+	height: 5rem;
+
+}
+
+section#consultation div.container div#consult_form form button{
+	display: block;
+	width: 100%;
+	height: 5rem;
+}
+
+
+/*forth section*/
+#testimonials{
+	height: 58rem;	
+}
+
+section#testimonials div.container img#testimonials{
+	display: block;
+	width: 88.5rem;
+	height: 33.7rem;
+	margin: 5rem auto;
+}
 /*fifth section */
 #contact{
 	height: 61.5rem;
 
 }
-	
+/*headers*/	
 h3.section_header{
 	font-size: 4.8rem;
 	font-weight: 300;
 	color: #000;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: -3rem;
-	padding: 0 33.3%;
-	display: inline-block;	
+	display: block;
+	position: relative;	
+	top: -3rem;
+	
 }
 
 img.header_decoration{
 	display: block;
-	margin: 1.6rem 0;
-	padding: 0 33.3%;
-	display: inline-block;
+	margin: 0 auto;
+	position: relative;
+	top: -2.2rem;
+	
 }
-
-
-
-
-
 
 /*footer style*/
 footer{
